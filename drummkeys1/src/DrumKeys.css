@@ -1,0 +1,67 @@
+body {
+  background-image: url('./Assets/sounds/audience.jpg');
+ background-repeat: no-repeat; 
+margin-left: auto;
+background-position: center;
+} 
+.container-drum-pad {
+  display: flex;
+  padding-top: 280px;
+  padding-left: 280px;
+  padding-right: 300px;
+  flex-direction: rows;
+align-items: center;
+ }
+.container-drum-pad div {
+  display: flex;
+  align-self: center;
+  }
+.drum-pad {
+  font-family: "VT323", monospace;
+  font-size: 1vw;
+  padding: 1.45vw 2vw;
+  padding:none;
+  margin: 3px;
+  border-radius: 5px;
+  opacity: 0.5;
+  outline: none;
+  justify-self: center;
+  position: relative;
+}
+.drum-pad:active {
+  background: #f3ede1;
+  transform: translateY(3px);
+}
+.active {
+  background: #f3ede1;
+  transform: translateY(3px);
+}
+.row-top button {
+  background-color: lightslategrey;
+  }
+.row-mid button {
+  background-color: #f88c21;
+}
+.row-bottom button {
+  background-color: #f1dd5a;
+}
+.container-mods {
+  border: solid 2px black;
+  display: flex; 
+  flex-direction: row;
+  align-items: center; 
+}
+.container-display {
+  padding: 0.5vw;
+  width: 10vw;
+  font-size: 1vw;
+  display: flex;
+  justify-content: center;
+ color: #f65532;
+  border: inset #f65532 1px;
+  font-family: "Orbitron", sans-serif;
+}
+
+
+
+

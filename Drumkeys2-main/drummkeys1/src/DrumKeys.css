@@ -1,0 +1,141 @@
+body {
+  /* background: #f1dd5a;  */
+  background-image: url('./Assets/sounds/audience.jpg');
+ background-repeat: no-repeat;
+ display: block;
+
+} 
+
+
+#wrapper-main {
+  
+  width: 3vw;
+  height: 4vh;
+
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+} 
+
+.container-drum-pad {
+  display: flex;
+  padding-top: 200px;
+  flex-direction: rows;
+ 
+
+}
+
+.container-drum-pad div {
+  display: flex;
+  align-self: center;
+}
+
+.drum-pad {
+  font-family: "VT323", monospace;
+  font-size: 1vw;
+  padding: 1.45vw 2vw;
+  margin: 5px;
+  border-radius: 2px;
+  outline: none;
+  justify-self: center;
+  box-shadow: 2px 2px 2px black;
+}
+
+.drum-pad:active {
+  background: #f3ede1;
+  transform: translateY(3px);
+}
+
+.active {
+  background: #f3ede1;
+  transform: translateY(3px);
+}
+
+.row-top button {
+  background-color: lightslategrey;
+  
+}
+.row-mid button {
+  background-color: #f88c21;
+}
+.row-bottom button {
+  background-color: #f1dd5a;
+}
+
+.container-mods {
+  /* border: solid 2px black; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#volume-bar {
+  -webkit-appearance: slider-vertical;
+  width: 10px;
+  height: 15vw;
+  outline: none;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+#volume-bar::-webkit-slider-runnable-track {
+  background: #f3ede1;
+  border-radius: 10px;
+  border: inset 2px;
+}
+
+.container-display {
+  padding: 0.5vw;
+  width: 10vw;
+  font-size: 1vw;
+  display: flex;
+  justify-content: center;
+
+
+  color: #f65532;
+  border: inset #f65532 1px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.container-led-pitch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-pitch {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2vw;
+}
+
+#pitch-bar {
+  width: 20vw;
+  margin-top: 1vw;
+  outline: none;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+#pitch-bar::-webkit-slider-runnable-track {
+  background: #f3ede1;
+  border-radius: 10px;
+  border: inset 2px;
+}
+
+#label-pitch {
+  text-align: center;
+  color: #f65532;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+  font-family: "Orbitron", sans-serif;
+  margin-top: 1.2vw;
+  letter-spacing: 3px;
+  font-size: 1.25vw;
+}
+
